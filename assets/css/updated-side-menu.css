@@ -1,0 +1,25 @@
+.navigation .nav-brand-side {
+  display:none;
+  padding:25px;
+  margin-bottom:10px;
+}
+
+.container {
+  max-width:1170px;
+}
+
+.navigation li a {
+  font-family:'Roboto', sans-serif;
+  font-size:14px;
+  text-transform:uppercase;
+  font-weight:600;
+  color:#000;
+  padding:5px;
+}
+
+@media (max-width: 800px) {
+  .nav_content {
+    display:block;
+  }
+}
+

@@ -15,5 +15,6 @@ module.exports = {
     minify: env === 'production',
     warnForDuplicates: env !== 'production'
   }),
-  babel: jsStandards()
+  babel: jsStandards(),
+  vendor: ['assets/js/**']
 }

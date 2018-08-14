@@ -10,14 +10,35 @@
       <title>Title of Your Site</title>
     </block>
     <link rel='stylesheet' href='css/index.css'>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="/css/--mp---Testimonials-Slider.css">
+    <link rel="stylesheet" href="/css/Dynamically-Queue-Videos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/updated-side-menu-1.css">
+    <link rel="stylesheet" href="/css/updated-side-menu.css">
+    <link rel="stylesheet" href="/css/Video-Responsive.css">
   </head>
   <body>
-    <main id='{{ pageId }}'>
-      <block name='content'></block>
-    </main>
+  <include src="includes/_header.html"></include>
+  <main id='{{ pageId }}' class='{{ pageId === "index" ? "p-0" : "mainpage pb-5"}}'>
+    <block name='content'></block>
+  </main>
+  <include src="includes/_footer.html"></include>
 
     <block name='javascript'>
       <script src='js/main.js' defer></script>
+      <script src="/js/jquery.min.js"></script>
+      <script src="/bootstrap/js/bootstrap.min.js"></script>
+      <script src="/js/--mp---Testimonials-Slider.js"></script>
+      <script src="/js/Dynamically-Queue-Videos.js"></script>
+      <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+      <script src="https://www.youtube.com/iframe_api"></script>
+      <script src="/js/updated-side-menu-1.js"></script>
+      <script src="/js/updated-side-menu.js"></script>
     </block>
   </body>
 </html>
